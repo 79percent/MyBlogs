@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const obj = {
+      a1: '1-1',
+      b1: '1-2',
+      children: {
+        a2: '2-1',
+        b2: '2-2',
+        c2: '2-3',
+        children: {
+          a3: '3-1',
+          children: {
+            a4: '4-1',
+            b4: '4-2',
+          }
+        }
+      }
+    }
+    const dfs = (obj = {}, newObj = {}) => {
+      for (const key in obj) {
+        if(key === 'children'){
+          dfs(obj[key], newObj);
+        }else {
+          console.log(key, obj[key])
+          newObj[key] = obj[key];
+        }
+      }
+      return newObj;
+    }
+    console.log(dfs(obj))
+  </script>
+</body>
+
+</html>

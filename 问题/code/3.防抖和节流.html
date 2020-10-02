@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function sayResize() {
+      console.log('窗口滚动')
+    }
+    // 防抖, 多次执行变为最后一次执行
+    let timer = null;
+    function debounce(fn) {
+      if (timer !== null) {
+        clearTimeout(timer);
+        timer = null;
+      }
+      timer = setTimeout(() => {
+        fn && fn();
+      }, 1000)
+    }
+    // 节流, 多次执行变为间隔执行
+    function throttle(fn) {
+      if(!timer){
+        timer = setTimeout(() => {
+          fn && fn();
+          clearTimeout(timer);
+          timer = null;
+        }, 1000)
+      }
+    }
+    // window.addEventListener('resize', () => {
+    //   debounce(sayResize)
+    // });
+    window.addEventListener('resize', () => {
+      throttle(sayResize)
+    });
+  </script>
+</body>
+
+</html>

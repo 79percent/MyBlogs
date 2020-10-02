@@ -1,0 +1,2 @@
+# 在react中使用Antd的Select时候，有个需求要做成两个Select联动的效果
+## 思路：两个Select在state中绑定value，比如第二个Select需要根据第一个Select所选项展示不同的选项时，那么把第一个Select的value通过props传给第二个Select，第二个Select在didupdate生命周期中拿到value后，把选项设置为对应的option，起到联动的效果。选第一个时候，要注意：如果选的值和前一个不同，要把第二个的值清空，优化用户体验
