@@ -1,5 +1,9 @@
 # Git 常见场景和命令
 
+- 查看所有可用 git 命令
+
+  > git help
+
 - 初始化本地仓库
 
   > git init
