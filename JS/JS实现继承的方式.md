@@ -4,6 +4,7 @@
 function Father() {}
 function Child() {}
 Child.prototype = new Father();
+Child.prototype.constructor = Child;
 ```
 
 优点： 实例可以共享原型链上的方法
