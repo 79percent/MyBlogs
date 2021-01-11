@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .text-box {
+        width: 200px;
+        border: 1px solid #000;
+        margin-top: 20px;
+      }
+
+      /* 单行超出省略号 */
+      .single-line {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      /* 多行超出省略号 */
+      .multi-line {
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text-box single-line">
+      A公司是B公司的重要战略伙伴，致力于为C行业提供一站式
+      解决方案，目前处于高速发展期。公司旗下有四个事业部，业务主要涵盖以下三个方面，2016年公司
+      年营业额达到100万元。
+    </div>
+    <div class="text-box multi-line">
+      A公司是B公司的重要战略伙伴，致力于为C行业提供一站式解决方案，目前处于高速发展期。公司旗下有四个事业部，业务主要涵盖以下三个方面，2016年公司年营业额达到100万元。
+    </div>
+  </body>
+</html>
