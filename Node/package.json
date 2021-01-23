@@ -1,0 +1,25 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.http、https.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp -v",
+    "hello": "echo hello",
+    "start": "node ./1.http、https.js",
+    "runjs1": "echo 并行执行脚本 & node ./1.http、https.js & node ./2.fs.js",
+    "runjs2": "echo 串行执行脚本 && node ./1.http、https.js && node ./2.fs.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "lodash": "^4.17.20",
+    "test-publish-gcf": "^1.0.0",
+    "underscore": "^1.12.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
