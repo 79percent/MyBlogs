@@ -1,25 +1,33 @@
 {
-  "name": "node",
+  "name": "nodessss",
   "version": "1.0.0",
   "description": "",
   "main": "1.http、https.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp -v",
+    "dev": "cross-env NODE_ENV=development gulp -f ./gulp.config.js",
+    "prod": "cross-env NODE_ENV=production gulp -f ./gulp.config.js",
     "hello": "echo hello",
     "start": "node ./1.http、https.js",
+    "runjs": "echo 执行脚本 & node ./6.script.js",
     "runjs1": "echo 并行执行脚本 & node ./1.http、https.js & node ./2.fs.js",
-    "runjs2": "echo 串行执行脚本 && node ./1.http、https.js && node ./2.fs.js"
+    "runjs2": "echo 串行执行脚本 && node ./1.http、https.js && node ./2.fs.js",
+    "build": "echo $npm_package_config_env"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
     "lodash": "^4.17.20",
+    "react-native-gui": "git+https://github.com/79percent/react-native-ui.git",
     "test-publish-gcf": "^1.0.0",
     "underscore": "^1.12.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "gulp": "^4.0.2"
+  },
+  "config": {
+    "env": "访问package中的字段"
   }
 }
