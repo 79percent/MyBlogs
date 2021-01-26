@@ -25,7 +25,8 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "log4js": "^6.3.0"
   },
   "config": {
     "env": "访问package中的字段"

@@ -1,0 +1,72 @@
+[2021-01-26T11:12:23.808] [ERROR] cheese - Cheese is too ripe!
+[2021-01-26T11:12:23.815] [FATAL] cheese - Cheese was breeding ground for listeria.
+[2021-01-26T11:13:53.457] [DEBUG] cheese - Url {
+  protocol: 'https:',
+  slashes: true,
+  auth: null,
+  host: 'www.baidu.com:443',
+  port: '443',
+  hostname: 'www.baidu.com',
+  hash: '#tag=3',
+  search: '?id=2',
+  query: 'id=2',
+  pathname: '/path/index.html',
+  path: '/path/index.html?id=2',
+  href: 'https://www.baidu.com:443/path/index.html?id=2#tag=3' }
+[2021-01-26T11:18:45.121] [DEBUG] cheese - Url {
+  protocol: 'https:',
+  slashes: true,
+  auth: null,
+  host: 'www.baidu.com:443',
+  port: '443',
+  hostname: 'www.baidu.com',
+  hash: '#tag=3',
+  search: '?id=2',
+  query: 'id=2',
+  pathname: '/path/index.html',
+  path: '/path/index.html?id=2',
+  href: 'https://www.baidu.com:443/path/index.html?id=2#tag=3' }
+[2021-01-26T11:18:45.129] [DEBUG] cheese - https://www.baidu.com:443/path/index.html?id=2#tag=3
+[2021-01-26T11:20:42.437] [DEBUG] cheese - http://www.abc.com/
+[2021-01-26T11:21:35.615] [DEBUG] cheese - http://www.abc.com/b
+[2021-01-26T11:28:19.265] [DEBUG] cheese - URLSearchParams { 'https://www.baidu.com:443/path/index.html?id' => '2#tag=3' }
+[2021-01-26T11:32:10.877] [DEBUG] cheese - 2
+[2021-01-26T11:34:20.763] [DEBUG] cheese - URLSearchParams { 'id' => '2' }
+[2021-01-26T11:34:20.771] [DEBUG] cheese - 2
+
+[2021-01-26T15:13:08.096] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:13:12.512] [DEBUG] cheese - undefined
+[2021-01-26T15:13:23.195] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:13:24.501] [DEBUG] cheese - /api/list
+[2021-01-26T15:14:30.798] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:14:32.711] [DEBUG] cheese - /api/list
+[2021-01-26T15:14:50.987] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:24:40.724] [DEBUG] cheese - /
+[2021-01-26T15:24:46.734] [DEBUG] cheese - /aa
+[2021-01-26T15:25:24.481] [DEBUG] cheese - /?name=g
+[2021-01-26T15:26:56.888] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:27:08.149] [DEBUG] cheese - /?name=g
+[2021-01-26T15:27:40.888] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:27:53.245] [DEBUG] cheese - /?name=g
+[2021-01-26T15:28:19.546] [DEBUG] cheese - /
+[2021-01-26T15:28:19.547] [DEBUG] cheese - <Buffer 6e 61 6d 65 3d 67 63 66>
+[2021-01-26T15:30:09.959] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:31:38.046] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:31:41.037] [DEBUG] cheese - /
+[2021-01-26T15:31:41.038] [DEBUG] cheese - <Buffer 6e 61 6d 65 3d 67 63 66>
+[2021-01-26T15:32:10.560] [DEBUG] cheese - /?name=g
+[2021-01-26T15:32:10.560] [DEBUG] cheese - <Buffer 75 73 65 72 6e 61 6d 65 3d 37 39 70 65 72 63 65 6e 74 26 70 61 73 73 77 6f 72 64 3d 31 31 31>
+[2021-01-26T15:35:22.625] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:35:28.108] [DEBUG] cheese - /?name=g
+[2021-01-26T15:35:28.109] [DEBUG] cheese - <Buffer 75 73 65 72 6e 61 6d 65 3d 37 39 70 65 72 63 65 6e 74 26 70 61 73 73 77 6f 72 64 3d 31 31 31>
+[2021-01-26T15:35:48.890] [DEBUG] cheese - /api/list?name=g
+[2021-01-26T15:35:57.052] [DEBUG] cheese - /api/list?name=g
+[2021-01-26T15:35:57.052] [DEBUG] cheese - <Buffer 75 73 65 72 6e 61 6d 65 3d 37 39 70 65 72 63 65 6e 74 26 70 61 73 73 77 6f 72 64 3d 31 31 31>
+[2021-01-26T15:36:16.427] [DEBUG] cheese - /api/list?name=g
+[2021-01-26T15:36:16.428] [DEBUG] cheese - <Buffer 75 73 65 72 6e 61 6d 65 3d 37 39 70 65 72 63 65 6e 74 26 70 61 73 73 77 6f 72 64 3d 31 31 31>
+[2021-01-26T15:39:23.232] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:43:03.626] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:45:11.852] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T15:46:34.506] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T16:11:36.287] [DEBUG] cheese - localhost:8090 start!!!
+[2021-01-26T16:11:50.495] [DEBUG] cheese - localhost:8090 start!!!
