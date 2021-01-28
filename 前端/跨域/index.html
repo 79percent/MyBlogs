@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>跨域</title>
+  </head>
+  <body>
+    <p>开启服务,指定8888端口： npx http-server -p 8888</p>
+    <!-- jsonp -->
+    <script>
+      function getData(data = {}) {
+        console.log("jsonp: ", data);
+      }
+    </script>
+    <script src="http://localhost:9000/api/data?cb=getData"></script>
+    <!-- cors -->
+    <script>
+      fetch("http://localhost:9090/api/data")
+        .then((res) => res.json())
+        .then((res) => {
+          console.log("cors: ", res);
+        });
+    </script>
+    <!-- proxy -->
+    <script>
+      fetch("http://localhost:9080/api/data")
+        .then((res) => res.json())
+        .then((res) => {
+          console.log("proxy: ", res);
+        });
+    </script>
+  </body>
+</html>

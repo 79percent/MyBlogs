@@ -1,0 +1,17 @@
+{
+  "name": "kuayu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8888",
+    "run-jsonp": "npx nodemon jsonp.js",
+    "run-cors": "npx nodemon cors.js",
+    "run-proxy": "npx nodemon proxy.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-proxy-middleware": "^1.0.6"
+  }
+}
