@@ -28,6 +28,9 @@ function flatten2(arr = []) {
 
 /**
  * 3. while循环
+ * 利用concat合并数组
+ * [].concat([1], [2], [3]) > [1, 2, 3]
+ * [].concat(...[1,2,[3]]) > [1, 2, 3]
  */
 function flatten3(arr = []) {
   while (arr.some(item => Array.isArray(item))) {
