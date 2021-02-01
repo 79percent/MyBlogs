@@ -83,7 +83,51 @@ const fs = require('fs');
 // console.log(content);
 // console.log('end')
 
-const fsPromise = require('fs').promises
-fsPromise.readFile('./2.data.json').then(res => {
-  console.log(res.toString())
+/**
+ * fsPromise模块返回的是Promise
+ */
+// const fsPromise = require('fs').promises
+// fsPromise.readFile('./2.data.json').then(res => {
+//   console.log(res.toString())
+// })
+
+/**
+ * 循环创建文件
+ */
+// for (let i = 0; i < 10; i++) {
+//   fs.writeFile(`./logs/log-${i}.js`, `console.log(${i})`, (err) => {
+//     if (err)
+//       throw err;
+//   })
+// }
+
+/**
+ * 判断读取的是文件夹还是文件
+ */
+const dirPath = './logs';
+fs.stat(dirPath, (err, stat) => {
+  if (err) {
+    throw err;
+  }
+  console.log(stat);
+  if (stat.isFile()) {
+    console.log(dirPath + '是文件')
+  } else if (stat.isDirectory()) {
+    console.log(dirPath + '是文件夹')
+  }
+});
+fs.readdir(dirPath, (err, content) => {
+  content.forEach((item, index) => {
+    const itemPath = `${dirPath}/${item}`
+    fs.stat(itemPath, (err, stat) => {
+      if (err) {
+        throw err;
+      }
+      if (stat.isFile()) {
+        console.log(itemPath + '是文件')
+      } else if (stat.isDirectory()) {
+        console.log(itemPath + '是文件夹')
+      }
+    });
+  })
 })
