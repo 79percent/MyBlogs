@@ -1,4 +1,7 @@
-// 文件读写
+/**
+ * Node内置模块 fs 
+ * 文件读写
+ */
 const fs = require('fs');
 
 // const data = {
@@ -104,30 +107,51 @@ const fs = require('fs');
 /**
  * 判断读取的是文件夹还是文件
  */
-const dirPath = './logs';
-fs.stat(dirPath, (err, stat) => {
-  if (err) {
-    throw err;
-  }
-  console.log(stat);
-  if (stat.isFile()) {
-    console.log(dirPath + '是文件')
-  } else if (stat.isDirectory()) {
-    console.log(dirPath + '是文件夹')
-  }
-});
-fs.readdir(dirPath, (err, content) => {
-  content.forEach((item, index) => {
-    const itemPath = `${dirPath}/${item}`
-    fs.stat(itemPath, (err, stat) => {
-      if (err) {
-        throw err;
-      }
-      if (stat.isFile()) {
-        console.log(itemPath + '是文件')
-      } else if (stat.isDirectory()) {
-        console.log(itemPath + '是文件夹')
-      }
-    });
-  })
+// const dirPath = './logs';
+// fs.stat(dirPath, (err, stat) => {
+//   if (err) {
+//     throw err;
+//   }
+//   console.log(stat);
+//   if (stat.isFile()) {
+//     console.log(dirPath + '是文件')
+//   } else if (stat.isDirectory()) {
+//     console.log(dirPath + '是文件夹')
+//   }
+// });
+
+/**
+ * 递归遍历文件夹
+ * 
+ */
+// function readDir(dirPath) {
+//   fs.readdir(dirPath, (err, content) => {
+//     content.forEach((item, index) => {
+//       const itemPath = `${dirPath}/${item}`
+//       fs.stat(itemPath, (err, stat) => {
+//         if (err) {
+//           throw err;
+//         }
+//         if (stat.isFile()) {
+//           fs.readFile(itemPath, 'utf-8', (err, content) => {
+//             if (err) {
+//               throw err;
+//             }
+//             console.log(content)
+//           })
+//         } else if (stat.isDirectory()) {
+//           readDir(itemPath)
+//         }
+//       });
+//     })
+//   })
+// }
+
+// readDir('./logs')
+
+/**
+ * 监听文件变化
+ */
+fs.watch('./logs', (err) => {
+  console.log('file is change')
 })

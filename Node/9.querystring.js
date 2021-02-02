@@ -1,3 +1,7 @@
+/**
+ * Node内置模块 querystring
+ * url参数处理
+ */
 const querystring = require('querystring')
 
 // const paramsUrl = 'foo=bar&abc=xyz&abc=123'

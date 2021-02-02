@@ -1,3 +1,7 @@
+/**
+ * log4js第三方模块
+ * 打印日志
+ */
 const log4js = require("log4js");
 log4js.configure({
   appenders: { cheese: { type: "file", filename: "cheese.log" } },
@@ -7,7 +11,10 @@ log4js.configure({
 const logger = log4js.getLogger("cheese");
 logger.level = 'debug'
 
-
+/**
+ * Node内置模块 url
+ * 地址路径解析
+ */
 const url = require('url');
 const urlStr = 'https://www.baidu.com:443/path/index.html?id=2#tag=3'
 const urlObj = url.parse(urlStr);// 将url字符串解析成一个对象

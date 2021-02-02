@@ -1,3 +1,7 @@
+/**
+ * Node内置模块 events
+ * 事件注册和处理
+ */
 const events = require('events');
 
 const e = new events();
