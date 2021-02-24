@@ -1,0 +1,52 @@
+@bg-color: #bbd4a8;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 360px;
+  height: 420px;
+  background-color: @bg-color;
+  border: 10px solid #000;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #stage {
+    width: 304px;
+    height: 304px;
+    border: 2px solid #000;
+
+    #snake {
+      &>div {}
+    }
+  }
+
+  #score-panel {
+    width: 304px;
+    height: 70px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Courier;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
