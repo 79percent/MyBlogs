@@ -1,0 +1,1 @@
+!function(){"use strict";console.log(10),console.log("哈哈"),console.log("a");var o={name:"aaaa"};console.log(o)}();

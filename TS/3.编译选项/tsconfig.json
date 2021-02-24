@@ -1,0 +1,45 @@
+{
+  /**
+  include配置需要编译的文件
+   * **表示任意目录，*表示任意文件
+   * 下面表示的意思为：根目录下的src下的任意目录下的任意文件会被编译 
+   **/
+  "include": [
+    "./src/**/*"
+  ],
+  /**
+  exclude配置不需要编译的文件
+  //  **/
+  // "exclude": [
+  //   "src/hello/**/*"
+  // ],
+  /**
+  compilerOptions 编译器的选项
+  */
+  "compilerOptions": {
+    /** 编译成目标js的es版本, 可以给个错误的值，查看所有可选的版本 */
+    "target": "ES6",
+    /** 指定模块化的规范 */
+    "module": "es6",
+    /** lib用来指定项目中要使用的库 */
+    // "lib": [
+    //   "dom"
+    // ]
+    /** outDir 输出目录 */
+    "outDir": "./dist",
+    /** outFile 输出文件，代码合并成一个文件 */
+    // "outFile": "./dist/app.js"
+    /** 是否对js文件进行编译，默认是false */
+    "allowJs": false,
+    /** checkJs 检查js代码是否符合规范 */
+    "checkJs": true,
+    /** 是否移除注释 */
+    "removeComments": true,
+    /** 不生成编译后的js文件 */
+    "noEmit": true,
+    /** 编译错误时，不生成js文件 */
+    "noEmitOnError": true,
+    /** 开启严格模式 总开关 */
+    "strict": true,
+  }
+}
