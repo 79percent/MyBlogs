@@ -1,3 +1,4 @@
 import "./style/index.less";
+import Control from "./modules/Control";
 
-console.log(1);
+const control = new Control();
