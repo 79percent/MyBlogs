@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 20px solid #000;
+        border-radius: 50%;
+        background: linear-gradient(to right, #00a853, #f04134);
+      }
+      .div1 {
+        margin: 30px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 35%;
+        box-shadow: 5px 5px 10px 10px #ccc;
+      }
+      .div2 {
+        width: 180px;
+        height: 160px;
+        background-color: red;
+        border-top-left-radius: 20px 100px;
+        border-top-right-radius: 20px 100px;
+        border-bottom-left-radius: 20px 100px;
+        border-bottom-right-radius: 20px 100px;
+      }
+      .div3 {
+        width: 160px;
+        height: 180px;
+        background-color: red;
+        border-top-left-radius: 100px 20px;
+        border-top-right-radius: 100px 20px;
+        border-bottom-left-radius: 100px 20px;
+        border-bottom-right-radius: 100px 20px;
+      }
+      .div4 {
+        width: 180px;
+        height: 180px;
+        position: relative;
+        margin: 20px;
+      }
+      .a {
+        position: absolute;
+        left: 0px;
+        top: 10px;
+      }
+      .b {
+        position: absolute;
+        left: 10px;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4">
+      <div class="div2 a"></div>
+      <div class="div3 b"></div>
+    </div>
+  </body>
+</html>
